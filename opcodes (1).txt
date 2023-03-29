@@ -1,0 +1,26 @@
+00 = lda
+01 = sta
+02 = add
+03 = sub
+04 = mul
+05 = div
+06 = out
+07 = inp
+08 = bra
+09 = brp
+0A = brz
+0B = bre
+0C = end
+
+
+lda = load address= load value at address into accumulator
+sta = store address = store accumulator to a memory address
+add = add = add value at address to accumulator
+sub = subtract = take value at address away from accumulator (positive numbers only)
+mul = multiply = multiply accumulator by value at address
+div = divide = divide accumulator by value at address
+out = output = print to terminal (follow instruction by 0x00 as base address)
+bra = branch always = goto a certain address without any conditions
+brn = branch if not zero = goto a certain address as long as the accumulator doesnt equal zero
+brz = branch if zero = goto a certain address as long as the accumulator equals zero
+end = break = stops execution of the program
